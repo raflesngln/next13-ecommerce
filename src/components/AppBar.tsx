@@ -65,7 +65,7 @@ function ResponsiveAppBar() {
     <AppBar position="fixed" sx={{ bgcolor: "#29292d" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Image src="/logo-light.png" alt="Jennifer Wallet" width={80} height={80}/>
+          <Image src="/logo-light.png" alt="Jennifer Wallet" width={120} height={120}/>
           <Typography
             variant="h6"
             noWrap
@@ -76,7 +76,7 @@ function ResponsiveAppBar() {
               display: { xs: "none", md: "flex" },
               fontFamily: "monospace",
               fontWeight: 700,
-              letterSpacing: ".1rem",
+              letterSpacing: ".0rem",
               color: "gray",
               textDecoration: "none",
             }}
