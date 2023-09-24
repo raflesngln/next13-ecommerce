@@ -13,6 +13,7 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import { Grid, Card, CardContent } from "@mui/material";
+import Link from 'next/link'
 
 import jsonData from "@/config/jsonData.json";
 import CorouselProduct from "@/components/corouselProduct";
@@ -71,13 +72,15 @@ function ResponsiveAppBar() {
         <Grid container spacing={2}>
           {jsonData.map((item, i) => (
             <Grid item xs={12} sm={6} md={3} key={item.id}>
-              <MediaCard
-                key={i}
-                title={item.label}
-                image={item.imgPath}
-                desc="Loremdsf"
-              />
-            </Grid>
+                <Link key={i} href={`/produk/${item.id}/${item.label}`}>
+                <MediaCard
+                  key={i}
+                  title={item.label}
+                  image={item.imgPath}
+                  desc="Lorem ipsum"
+                />
+            </Link>
+              </Grid>
           ))}
         </Grid>
       </Container>
