@@ -13,11 +13,12 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import { Grid } from '@mui/material';
 
 const pages = ['Products', 'Pricing', 'Blog'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
-function ResponsiveAppBar() {
+function FooterLayout() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
   const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
 
@@ -38,10 +39,19 @@ function ResponsiveAppBar() {
 
   return (
     <main>
-      <Container maxWidth="xl">
-        <h2>Hello</h2>
-      </Container>
+      
+      <Grid
+        container
+        direction="row"
+        justifyContent="space-around"
+        alignItems="flex-end"
+      >
+        <li>sadsaads</li>
+        <li>sadsaads</li>
+        <li>sadsaads</li>
+      </Grid>
+
     </main>
   );
 }
-export default ResponsiveAppBar;
+export default FooterLayout;

@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+
+html,body{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -16,12 +22,17 @@
   }
 }
 
+
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: black;
+  background: white;
+  height: 100%;
+}
+.box-layout{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  align-self: stretch;
+  height: 100vh;
 }
