@@ -14,8 +14,8 @@ export default function StarredPage() {
           alignItems: 'center',
         }}
       >
-        <Typography variant="body1" gutterBottom>
-          Starred Page
+         <Typography variant="h2" gutterBottom>
+          Wallet Produk
         </Typography>
       </Box>
     </Container>

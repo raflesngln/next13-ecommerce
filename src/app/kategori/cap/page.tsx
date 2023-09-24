@@ -3,7 +3,7 @@ import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 
-export default function TasksPage() {
+export default function StarredPage() {
   return (
     <Container>
       <Box
@@ -14,8 +14,8 @@ export default function TasksPage() {
           alignItems: 'center',
         }}
       >
-        <Typography variant="body1" gutterBottom>
-          Tasks Page
+         <Typography variant="h2" gutterBottom>
+          CAP Produk
         </Typography>
       </Box>
     </Container>
