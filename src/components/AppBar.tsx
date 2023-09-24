@@ -14,6 +14,7 @@ import AdbIcon from "@mui/icons-material/Adb";
 import { Button, Menu, MenuItem, Popover } from "@mui/material";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import Link from 'next/link'
+import Image from 'next/image'
 
 // const menuPages = ["Wallet", "Belt", "Cap", "Bags", "Card Holder"];
 const menuPages = [
@@ -64,7 +65,7 @@ function ResponsiveAppBar() {
     <AppBar position="fixed" sx={{ bgcolor: "#29292d" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+          <Image src="/logo-light.png" alt="Jennifer Wallet" width={80} height={80}/>
           <Typography
             variant="h6"
             noWrap
@@ -75,12 +76,12 @@ function ResponsiveAppBar() {
               display: { xs: "none", md: "flex" },
               fontFamily: "monospace",
               fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
+              letterSpacing: ".1rem",
+              color: "gray",
               textDecoration: "none",
             }}
           >
-            LOGO
+             |Jennifer Wallet
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -114,7 +115,7 @@ function ResponsiveAppBar() {
             >
               {menuPages.map((val, id) => (
                 <MenuItem key={val.id} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{val.title}m</Typography>
+                  <Typography textAlign="center">{val.title}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -136,7 +137,7 @@ function ResponsiveAppBar() {
               textDecoration: "none",
             }}
           >
-            LOGO
+            JFR
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {/* {menuPages.map((page) => (
