@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import Carousel from 'react-material-ui-carousel';
 import { Paper } from '@mui/material';
@@ -13,7 +14,7 @@ function CorouselHeader() {
     <Carousel>
       {corouselImage.map((imgPath, index) => (
         <Paper key={index}>
-          <img src={imgPath} alt={`Image ${index}`} style={{ width: '100%' }} />
+          <img src={imgPath} alt={`Image ${index}`} style={{ width: '100%' ,borderRadius:8}} />
         </Paper>
       ))}
     </Carousel>

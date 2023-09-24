@@ -14,7 +14,7 @@ const RootLayout: FC<PropsWithChildren> = function ({ children }) {
       <body>
         <main className="box-layout" >
           <AppBar />
-          <Container maxWidth="xl" sx={{pt:12}}>
+          <Container maxWidth="xl" sx={{pt:12,pb:10}}>
             {children}
           </Container>
 
